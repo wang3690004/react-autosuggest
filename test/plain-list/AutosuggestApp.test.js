@@ -339,9 +339,9 @@ describe('Default Autosuggest', () => {
       expectSuggestions([]);
     });
 
-    it('should keep the focus on input when suggestion is dragged on touch devices', () => {
+    it('should not keep the focus on input when suggestion is dragged on touch devices', () => {
       dragSuggestionOutTouch(1);
-      expect(isInputFocused()).to.equal(true);
+      expect(isInputFocused()).to.equal(false);
     });
 
     it("should select a suggestion if it's dragged and mouse enters back", () => {
