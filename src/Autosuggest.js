@@ -460,6 +460,7 @@ export default class Autosuggest extends Component {
 
   onSuggestionTouchStart = () => {
     this.justSelectedSuggestion = true;
+    this.input.blur();
     // todo: event.preventDefault when https://github.com/facebook/react/issues/2043
     // todo: gets released so onSuggestionMouseDown won't fire in chrome
   };
@@ -467,7 +468,6 @@ export default class Autosuggest extends Component {
   onSuggestionTouchMove = () => {
     this.justSelectedSuggestion = false;
     this.pressedSuggestion = null;
-    this.input.focus();
   };
 
   itemProps = ({ sectionIndex, itemIndex }) => {
