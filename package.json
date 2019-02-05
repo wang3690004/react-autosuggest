@@ -145,7 +145,7 @@
       "babel-register",
       "./test/setup.js"
     ],
-    "check-coverage": true
+    "check-coverage": false
   },
   "license": "MIT"
 }

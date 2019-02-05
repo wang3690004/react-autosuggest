@@ -566,6 +566,11 @@ export default class Autosuggest extends Component {
           this.onBlur();
           this.onSuggestionsClearRequested();
         }
+
+        //Adjustments for mobile version...
+        if (typeof event === 'boolean') {
+          this.onBlur();
+        }
       },
       onChange: event => {
         const { value } = event.target;
