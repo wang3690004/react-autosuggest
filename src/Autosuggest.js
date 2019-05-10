@@ -670,6 +670,8 @@ export default class Autosuggest extends Component {
               this.closeSuggestions();
             }
 
+            this.input.blur();
+
             if (highlightedSuggestion != null) {
               const newValue = getSuggestionValue(highlightedSuggestion);
 

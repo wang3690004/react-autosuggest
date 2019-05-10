@@ -586,6 +586,8 @@ var Autosuggest = (function(_Component) {
                   _this3.closeSuggestions();
                 }
 
+                _this3.input.blur();
+
                 if (highlightedSuggestion != null) {
                   var _newValue = getSuggestionValue(highlightedSuggestion);
 
