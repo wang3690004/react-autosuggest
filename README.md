@@ -8,6 +8,11 @@
 
 # React Autosuggest
 
+## note(注意): 
+  * 首先感谢原作者的分享，这个分支只是为了解决我遇到的问题： “在ios的webview内嵌页面下 和ios wap端下，当在input 输入完内容时 点击键盘确定 或浏览页面时候 导致input失去焦点 从而无法使用 'suggestion的问题'”， 如果有什么问题请及时联系我  --by wang3690004
+  (thanks for author contribuation,this fork only just solving my business problem:'under the ios system, hybrid webview and ios system safari, when i finished the contents in form by keyboard, i clicked the keyboard 'finished',  the form got blur and 'suggestion' got  vanished ,  when i just click outside the keyboard the 'suggestion' still vanish before i click 'finished'. if you have any quesions please issue me, thanks',)
+
+
 ## Demo
 
 Check out the [Homepage](http://react-autosuggest.js.org) and the [Codepen examples](http://codepen.io/collection/DkkYaQ).

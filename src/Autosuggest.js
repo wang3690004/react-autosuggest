@@ -556,9 +556,14 @@ export default class Autosuggest extends Component {
       },
       onBlur: event => {
         if (this.justClickedOnSuggestionsContainer) {
-          this.input.focus();
+          // this.input.focus();
+          //删除这一条使其在移动端点击suggestion时不呼出键盘，并且可以下拉菜单 让键盘一直存在
           return;
         }
+          //配置项中 alwaysrendersuggestion 要改为true
+        if(value &&value.length>0){
+          return;
+        } //当input有值的时候，移动端取消键盘 让suggestion获取焦点
 
         this.blurEvent = event;
 
